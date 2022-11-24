@@ -19,7 +19,7 @@ A collection of steamdeck startup animations, plus a script to randomize your st
 # Installation
 
 ```sh
-curl -o - https://raw.githubusercontent.com/kageurufu/steamdeck_startup_animations/main/install.sh | bash -
+curl -o - https://raw.githubusercontent.com/ixbitz/steamdeck_startup_animations/main/install.sh | bash -
 ```
 
 If you're (justifiably) not a fan of `curl | bash`, you can run this:
@@ -27,7 +27,7 @@ If you're (justifiably) not a fan of `curl | bash`, you can run this:
 ```sh
 mkdir -p "$HOME/homebrew"
 mkdir -p "$HOME/.config/systemd/user"
-git clone https://github.com/kageurufu/steamdeck_startup_animations "$HOME/homebrew/startup_animations"
+git clone https://github.com/ixbitz/steamdeck_startup_animations "$HOME/homebrew/startup_animations"
 ln -sf "$HOME/homebrew/startup_animations/randomize_deck_startup.service" "$HOME/.config/systemd/user/randomize_deck_startup.service"
 systemctl --user daemon-reload
 systemctl --user enable --now randomize_deck_startup.service
